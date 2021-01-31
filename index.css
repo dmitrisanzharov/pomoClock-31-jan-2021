@@ -1,0 +1,453 @@
+:root {
+    --shadow: rgb(189, 84, 80);
+    --button-shadow: 2px 4px 0px 0px rgb(235, 235, 237);
+  }
+  
+  body {
+    margin: 0;
+    font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    font-weight: 300;
+    color: white;
+  }
+  
+  /* .... hidden element background grayout .... */
+  
+  #hiddenMenuBackgroundGrayout {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+  }
+  
+  /* hidden menu  .................*/
+  
+  #hiddenMenu {
+    z-index: 1;
+    position: fixed;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+  
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+  
+    padding: 30px 20px 30px 20px;
+    color: rgb(192, 197, 201);
+    font-size: 24px;
+  
+    overflow-y: auto;
+  
+    display: none; 
+  }
+  
+  .hrHidden {
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid;
+    border-radius: 1px;
+  }
+  
+  .menuBlock {
+    margin-top: -20px !important;
+    margin-bottom: 20px;
+  }
+  
+  .settingsP {
+    color: black;
+    font-weight: 500;
+  }
+  
+  /* .............  hidden menu box 1 ........... */
+  
+  #menuRow1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -40px;
+    margin-bottom: -20px;
+  }
+  
+  #hiddenExitSign {
+    font-size: 30px;
+    font-family: "Zapf Dingbats";
+    cursor: pointer;
+  }
+  
+  #hiddenExitSign:hover {
+    color: rgb(128, 128, 128);
+  }
+  
+  /* .............  hidden menu box 2 ........... */
+  
+  #settingMenuTop {
+    display: flex;
+  }
+  
+  .settingLabel {
+    font-weight: 600;
+    margin-top: -15px;
+  }
+  
+  .settingMinutesInput {
+    border-radius: 5px;
+    background-color: rgb(239, 239, 239);
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 80px;
+    font-size: 24px;
+    padding: 10px;
+  }
+  
+  #settingBox2 {
+    margin-left: 50px;
+  }
+  
+  /*  setting row 3 ................... */
+  
+  #menuRow3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #slider {
+    width: 50%;
+  }
+  
+  /*  setting row 4 ................... */
+  
+  #menuRow4 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #btnBack {
+    background-color: rgb(204, 204, 204);
+    align-self: center;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    transition: 0.5s;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  #autoStartOnOff {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    transform: scale(0.9);
+    background-color: white;
+    transition: 0.5s;
+    color: white;
+  }
+  
+  /*  setting footer ................... */
+  
+  #hiddenMenuFooter {
+    background-color: rgb(239, 239, 239);
+    height: 80px;
+    margin: 0px -20px -30px -20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+  }
+  
+  #hiddenMenuOkBtn {
+    background-color: rgb(54, 54, 54);
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    border: none;
+    box-shadow: 0px 2px 0px 0px rgb(198, 198, 198);
+  }
+  
+  #hiddenMenuOkBtn:active {
+    position: relative;
+    top: 3px;
+  }
+  
+  #hiddenMenuOkBtn:hover {
+    background-color: rgb(34, 34, 34);
+  }
+  
+  /* start of Top menu ....... */
+  
+  #topMenu {
+    margin: auto;
+    margin-top: 25px;
+    width: 800px;
+    height: 50px;
+    box-sizing: border-box;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  
+    padding-right: 20px;
+  }
+  
+  #info{
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    align-self: center;
+  
+    border: none;
+    outline: none;
+    
+    margin-right: 10px;
+    width: 110px;
+  }
+  
+  #info a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #setting {
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    align-self: center;
+  
+    border: none;
+    outline: none;
+    
+    width: 110px;
+  }
+  
+  #info:active {
+    margin-top: 10px;
+  }
+  
+  .fa-info-circle {
+    margin-right: 5px;
+    transform: scale(1.25);
+  }
+  
+  .fa-cog {
+    margin-right: 5px;
+    transform: scale(1.25);
+  }
+  
+  #setting:active {
+    margin-top: 10px;
+  }
+  
+  .fa-cog {
+    margin-right: 5px;
+    transform: scale(1.25);
+  }
+  
+  hr {
+    width: 800px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  
+  #pomo {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #break1 {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #setsDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  #sets {
+    margin-left: 1vw;
+  }
+  
+  /* this style is applied via JS */
+  
+  .pomoStyle {
+    background-color: rgb(189, 84, 80);
+    font-weight: bold;
+    padding: 5px 7px 5px 7px;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  /* this style is applied via JS */
+  .break1Style {
+    background-color: rgb(76, 131, 133);
+    font-weight: bold;
+    padding: 5px 7px 5px 7px;
+    border-radius: 3px;
+  }
+  
+  #container {
+    width: 600px;
+    height: 390px;
+    padding: 19px 76px 19px 76px;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  #topRow {
+    font-size: 20px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  #middleRow {
+    font-size: 160px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  #bottomRow {
+    text-align: center;
+    height: 20%;
+  }
+  
+  #startPause {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    box-shadow: var(--button-shadow);
+    border: 1px solid white;
+    outline: none;
+  }
+  
+  #startPause:active {
+    margin-top: 4px;
+    margin-left: 2px;
+    box-shadow: none;
+  }
+  
+  #bottomText {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  /* SLIDER CODE   .......................*/
+  input[type="range"] {
+    width: 100%;
+    margin: 14.45px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+  }
+  input[type="range"]:focus {
+    outline: none;
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: rgba(205, 205, 205, 0.78);
+    border: 0;
+    border-radius: 25px;
+    width: 100%;
+    height: 6.1px;
+    cursor: pointer;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    margin-top: -14.45px;
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border: 2.4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #dadada;
+  }
+  input[type="range"]::-moz-range-track {
+    background: rgba(205, 205, 205, 0.78);
+    border: 0;
+    border-radius: 25px;
+    width: 100%;
+    height: 6.1px;
+    cursor: pointer;
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border: 2.4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  input[type="range"]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 18.85px 0;
+    color: transparent;
+    width: 100%;
+    height: 6.1px;
+    cursor: pointer;
+  }
+  input[type="range"]::-ms-fill-lower {
+    background: #c0c0c0;
+    border: 0;
+    border-radius: 50px;
+  }
+  input[type="range"]::-ms-fill-upper {
+    background: rgba(205, 205, 205, 0.78);
+    border: 0;
+    border-radius: 50px;
+  }
+  input[type="range"]::-ms-thumb {
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border: 2.4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+  }
+  input[type="range"]:focus::-ms-fill-lower {
+    background: rgba(205, 205, 205, 0.78);
+  }
+  input[type="range"]:focus::-ms-fill-upper {
+    background: #dadada;
+  }
+  /*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+  @supports (-ms-ime-align: auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type="range"] {
+      margin: 0;
+      /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+  }
+  

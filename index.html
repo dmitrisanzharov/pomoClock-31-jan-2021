@@ -1,0 +1,170 @@
+<!--..................... end of row 1 
+
+PROJECT GOAL: Is to learn how to copy and do the same... NOT about making it pretty... 
+
+
+Working ON:
+
+>(do last) make it Mobile responsive - steal from the  Samsung timer
+
+
+... todo end..............-->
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Dmitri Sanzharov Page</title>
+	<meta name="description" content="The HTML5 Herald">
+	<meta name="Dmitri Sanzharov" content="Dmitri Stuff">
+
+	<!--........................scripts .........................-->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        
+</head>
+
+<body>
+
+	<!--........................hidden menu .........................-->
+
+	<div id='hiddenMenu' class='hide1'>
+
+		<!--........................hidden menu box 1 .........................-->
+
+		<div id='menuRow1'>
+
+			<p><strong>TIMER SETTING<strong></p>
+      <span id='hiddenExitSign'>&#10006;</span>
+
+    </div>
+
+    <!--........................hidden menu box 2 .........................-->
+
+    <hr class='hrHidden'>
+
+    <div class='menuBlock'>
+
+      <p class='settingsP'>Time (minutes)</p>
+
+      <div id='settingMenuTop'>
+
+        <div id='settingBox1'>
+          <div class='settingLabel'>Pomodoro</div>
+          <input type='number' id='settingPomoMin' min='0' class='settingMinutesInput' value='25'>
+        </div>
+
+        <div id='settingBox2'>
+          <div class='settingLabel'>Break</div>
+          <input type='number' id='settingBreakMin' min='0' class='settingMinutesInput' value='5'>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--........................hidden Menu row 3 .........................-->
+
+    <hr class='hrHidden'>
+
+    <div class='menuBlock' id='menuRow3'>
+
+      <p class='settingsP'>Sound volume</p>
+
+      <input type='range' id='slider' value='75' />
+
+    </div>
+
+    <!--........................hidden Menu row 4 .........................-->
+
+    <hr class='hrHidden'>
+
+    <div class='menuBlock' id='menuRow4'>
+
+      <p class='settingsP'>Auto start next round?</p>
+
+      <div id='btnBack'>
+        <button id='autoStartOnOff'>on</button>
+      </div>
+    </div>
+
+    <!--........................hidden Menu footer .........................-->
+
+    <div id='hiddenMenuFooter'>
+      <button id='hiddenMenuOkBtn'>OK</button>
+    </div>
+
+  </div>
+  <!--........................end of hiddenMenu.........................-->
+    
+    
+
+    
+    
+
+  <!--........................start TopMenu .........................-->
+  <div id='topMenu'>
+
+   <a href='https://en.wikipedia.org/wiki/Pomodoro_Technique' target='_blank'> <button id='info'><i class="fas fa-info-circle"></i>Info</button></a>
+    <button id='setting'><i class="fas fa-cog "></i>Settings</button>
+
+  </div>
+
+  <!--.....................THIS IS THE MAIN CONTAINER THAN holds the main timer............................-->
+  <hr id='hr1' />
+  <div id='container'>
+
+    <div id='topRow'>
+      <span id="pomo">Pomodoro</span>
+
+      <span id="break1">Break</span>
+
+      <span id='setsDisplay'>Sets: <span id='sets'>0</span></span>
+    </div>
+
+    <div id='middleRow'>
+      <span id="mainDisplay">5:00</span>
+    </div>
+
+    <div id='bottomRow'>
+      <button id="startPause">start</button>
+    </div>
+
+  </div>
+  <!--........................end of container .........................-->
+
+  <div id='bottomText'>
+
+    Time to work!
+
+  </div>
+
+  <!--  HIDDEN ELEMENTS .............-->
+
+  <p hidden>Work - this one is for all</p>
+
+  <div id="wm" hidden></div>
+
+  <div id='semiColm' hidden>:</div>
+
+  <div id='ws' hidden></div>
+
+  <div hidden>Status: <span id="status">work</span></div>
+
+  <div id='hiddenMenuBackgroundGrayout'>
+  </div>
+  <!--........................hidden menu background grayout end .........................-->
+
+
+  <!--........................css and java .........................-->
+
+  <link rel='stylesheet' href='index.css' />
+  <script src='./index.js'></script>
+
+</body>
+
+</html>
